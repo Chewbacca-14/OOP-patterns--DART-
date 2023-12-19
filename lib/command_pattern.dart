@@ -80,7 +80,7 @@ class RemoteControl {
     if (commands.isNotEmpty) {
       Command lastCommand = commands.removeLast();
       lastCommand.undo();
-      log('Removed was: $lastCommand');
+      log('Removed was: ${lastCommand.toString()}');
     } else {
       print('No commands to undo');
     }
